@@ -16,7 +16,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: white;
+      background-color: #041C00;
       perspective: 1500px;
     }
 
@@ -31,8 +31,9 @@
 
     .invitation {
       position: relative;
-      width: 400px;
-      height: 600px;
+      height: calc(100vh - 40px);
+      max-width: calc(100vw - 40px);
+      aspect-ratio: 1 / 1.414;
       transform-style: preserve-3d;
       transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
     }
@@ -72,13 +73,6 @@
       }
     }
 
-    /* Responsive sizing */
-    @media (max-width: 500px) {
-      .invitation {
-        width: 90vw;
-        height: 135vw;
-      }
-    }
   </style>
 </head>
 <body>
